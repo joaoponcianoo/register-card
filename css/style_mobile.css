@@ -1,0 +1,71 @@
+@media (max-width: 1400px) {
+    body {
+        flex-direction: column;
+    }
+
+    .main-bg {
+        height: 200px;
+        background-image: url("/images/bg-main-mobile.png");
+        min-width: 100%;
+        min-height: 240px;
+        margin-bottom: 50px;
+        justify-items: center;
+    }
+
+    #card-front {
+        width: 330px;
+        height: 170px;
+        left: 3%;
+        top: 50%;
+        z-index: 1;
+    }
+
+    #card-back {
+        width: 330px;
+        height: 170px;
+        left: 12%;
+        top: -61%;
+    }
+
+    #card-front-img {
+        width: 330px;
+        height: 170px;
+    }
+
+    #card-back-img {
+        width: 330px;
+        height: 170px;
+    }
+
+    .card-circle {
+        width: 38px;
+        height: 38px;
+    }
+
+    .card-circle-border {
+        width: 16px;
+        height: 16px;
+        top: 16%;
+        left: 20%;
+    }
+
+    #card-number {
+        font-size: 1.4em;
+        left: 5%;
+    }
+
+    #card-name {
+        font-size: 0.7em;
+    }
+
+    #card-date {
+        font-size: 0.7em;
+        right: 5%;
+    }
+
+    #card-cvc {
+        top: 44%;
+        right: 11%;
+        font-size: 0.8em;
+    }
+}

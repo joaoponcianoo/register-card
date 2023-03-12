@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-bg {
+    position: relative;
+    max-width: 500px;
+    min-width: 500px;
+    height: 100%;
+    background-image: url("/images/bg-main-desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cards {
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+#card-front {
+    position: relative;
+    top: 22%;
+    left: 34%;
+}
+
+#card-back {
+    position: relative;
+    top: 25%;
+    left: 50%;
+}
+
+.card-circle {
+    position: absolute;
+    top: 10%;
+    left: 6%;
+
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.card-circle-border {
+    position: absolute;
+    top: 15%;
+    left: 18%;
+
+    width: 20px;
+    height: 20px;
+
+    border: solid 1px #ffffff;
+    border-radius: 50%;
+}
+
+
+#card-number {
+    position: absolute;
+    top: 55%;
+    left: 6%;
+
+    font-size: 1.8em;
+}
+
+#card-name {
+    position: absolute;
+    top: 80%;
+    left: 6%;
+}
+
+#card-date {
+    position: absolute;
+    top: 80%;
+    right: 16%;
+}
+
+#card-cvc {
+    position: absolute;
+    top: 44%;
+    right: 22%;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    padding: 1em;
+
+    width: 400px;
+}
+
+label {
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+input {
+    width: 100%;
+    height: 2.6em;
+    border-radius: 0.6em;
+    border: solid 2px #dedddf;
+
+    box-sizing: border-box;
+    font-size: 1em;
+
+    padding: 0em 1em;
+}
+
+input:focus {
+    outline: none;
+    border: solid 2px #600594;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.date-cvc {
+    display: flex;
+    gap: 1em;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.cvc {
+    width: 50%;
+}
+
+.date-input {
+    display: flex;
+    gap: 0.5em;
+}
+
+#confirm {
+    padding: 0.8em;
+    border: none;
+    border-radius: 0.6em;
+
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #21092f;
+    cursor: pointer;
+}
+
+.message-error {
+    display: none;
+    font-size: 0.8em;
+    color: #ff5252;
+}
+
+.input-error {
+    border: solid 2px #ff5252;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#main-complete {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+    padding: 1em;
+    width: 400px;
+}
+
+.icon-complete {
+    margin-bottom: 1.5em;
+}
+
+.title-complete {
+    font-size: 2.2em;
+    letter-spacing: 3px;
+    color: #21092f;
+}
+
+.text-complete {
+    color: #a3a3a3;
+    font-size: 1.2em;
+}
+
+#continue {
+    padding: 0.8em;
+    border: none;
+    border-radius: 0.6em;
+
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #21092f;
+    cursor: pointer;
+
+    width: 100%;
+    margin-top: 1.5em;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon-32x32.png" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_mobile.css">
+</head>
+
+<body>
+    <div class="main-bg">
+        <div id="card-front" class="cards">
+            <img src="/images/bg-card-front.png" alt="Card Front" id="card-front-img">
+            <div class="card-circle"></div>
+            <div class="card-circle-border"></div>
+            <span id="card-number">0000 0000 0000 0000</span>
+            <span id="card-name">YOUR NAME</span>
+            <div id="card-date"><span id="card-mm">00</span>/<span id="card-yy">00</span></div>
+        </div>
+        <div id="card-back" class="cards">
+            <img src="/images/bg-card-back.png" alt="Card Back" id="card-back-img">
+            <span id="card-cvc">000</span>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <form id="main-form" autocomplete="off">
+            <div class="form-fields">
+                <label for="input-name">CARDHOLDER NAME</label>
+                <input type="text" name="name" id="input-name" placeholder="e.g. Jane Appleseed" maxlength="20">
+                <span id="name-error" class="message-error">Can't be blank</span>
+            </div>
+
+            <div class="form-fields">
+                <label for="input-number">CARD NUMBER</label>
+                <input type="text" name="number" id="input-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+
+                <span id="number-error" class="message-error">Can't be blank</span>
+            </div>
+
+            <div class="date-cvc">
+                <div class="form-fields date">
+                    <label for="date">EXP. DATE (MM/YY)</label>
+                    <div class="date-input">
+                        <input type="text" name="date" id="input-mm" placeholder="MM" maxlength="2">
+                        <input type="text" name="date" id="input-yy" placeholder="YY" maxlength="2"> 
+                    </div>
+                    <span id="date-error" class="message-error">Can't be blank</span>
+                </div>
+
+                <div class="form-fields cvc">
+                    <label for="input-cvc">CVC</label>
+                    <input type="text" name="cvc" id="input-cvc" placeholder="e.g. 123" maxlength="3"> 
+                    <span id="cvc-error" class="message-error">Can't be blank</span>
+                </div>
+
+            </div>
+            <button id="confirm">Confirm</button>       
+        </form>
+
+        <div id="main-complete">
+            <img src="/images/icon-complete.svg" alt="Complete" class="icon-complete">
+
+            <h1 class="title-complete">THANK YOU!</h1>
+            <p class="text-complete">We've added your card details</p>
+
+            <button id="continue">Continue</button>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
