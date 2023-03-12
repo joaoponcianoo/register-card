@@ -5,7 +5,7 @@
 
     .main-bg {
         height: 200px;
-        background-image: url("images/bg-main-mobile.png");
+        background-image: url("/images/bg-main-mobile.png");
         min-width: 100%;
         min-height: 240px;
         margin-bottom: 50px;
